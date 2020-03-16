@@ -1,5 +1,5 @@
 const people = [
-  { name: "Helmut", age: "65" },
+  { name: "Helmut", age: 65 },
   { name: "Teresa", age: "33" },
   { name: "Jonas", age: "28" },
   { name: "Joachim", age: "72" },
@@ -7,7 +7,7 @@ const people = [
   { name: "Lukas", age: "31" }
 ];
 
-const populatePeople = array => {
+const populatePeople = (array) => {
   const content = document.getElementById("content");
   for (let i = 0; i < array.length; i++) {
     const person = array[i];
@@ -19,11 +19,16 @@ const populatePeople = array => {
 };
 
 const generateDiv = person => {
-  if (person.age < 65) {
-    return `<div class="person green">${person.name}</div>`;
-  } else {
-    return `<div class="person red">${person.name}</div>`;
-  }
+  // if (person.age < 60) {
+  //   return `<div class="person green">${person.name}</div>`;
+  // } else {
+  //   return `<div class="person red">${person.name}</div>`;
+  // }
+
+  // ternary operator
+  return person.age < 60 ?
+    `<div class="person green">${person.name}</div>` :
+    `<div class="person red">${person.name}</div>`;
 };
 
 populatePeople(people);
