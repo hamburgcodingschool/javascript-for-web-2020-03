@@ -89,4 +89,7 @@ Open Weather API:
 - https://openweathermap.org/current
 - `api.openweathermap.org/data/2.5/weather?q=Hamburg&appid=...`
 
+REST APIs:
+- https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/
+
 
