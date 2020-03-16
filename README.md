@@ -38,3 +38,13 @@ Web Server
 - Atom:  
   Packages > Settings View > Install Packages / Themes > atom-live-server > install  
   Packages > atom-live-server > Start server
+  
+Cat Fact API:
+- https://catfact.ninja/
+- `https://catfact.ninja/fact`
+  
+Open Weather API:
+- https://openweathermap.org/current
+- `api.openweathermap.org/data/2.5/weather?q=Hamburg&appid=...`
+
+
