@@ -29,15 +29,57 @@ Template Literals
 Fat Arrow Functions
 - https://www.w3schools.com/Js/js_arrow_function.asp
 
+DOM Functions
+
+<img src="board-images/dom-functions.jpg" width="600"/>
+
+`document.getElementById("...")` : HTML Element  
+`document.getElementsByTagName("...")` : []  
+`document.getElementsByClassName("...")` : []
+
+`someElement.querySelector("#idname")` : 1. HTML Element  
+`someElement.querySelector(".classname")` : 1. HTML ELement  
+`someElement.querySelector("tagname")` : 1. HTML Element  
+`someElement.querySelectorAll("...")` : []  
+
+`someElement.classList.add("class1", "class2", "someotherclass")`  
+
 ## Session 3
 
+Web Content
+
+<img src="board-images/web-content.jpg" width="600"/>
+
 Web Server
+
+<img src="board-images/web-server.jpg" width="600"/>
+
+<img src="board-images/local-vs-web-server.jpg" width="600"/>
+
+Local Web Server
 - VS Code:  
   Extensions > Live Server > install  
   index.html > Open with Live Server
 - Atom:  
   Packages > Settings View > Install Packages / Themes > atom-live-server > install  
   Packages > atom-live-server > Start server
+
+HTTP
+- https://www.youtube.com/watch?v=iYM2zFP3Zn0
+
+<img src="board-images/http.jpg" width="600"/>
+
+HTTP Methods
+
+<img src="board-images/http-methods.jpg" width="600"/>
+
+CRUD: Create - Read - Update - Delete
+
+URLs
+
+<img src="board-images/URL.jpg" width="600"/>
+
+## Session 4
   
 Cat Fact API:
 - https://catfact.ninja/
