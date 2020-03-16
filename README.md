@@ -97,4 +97,6 @@ Open Weather API:
 - https://openweathermap.org/current
 - `api.openweathermap.org/data/2.5/weather?q=Hamburg&appid=...`
 
-
+Firebase:
+- https://firebase.google.com/docs/firestore/quickstart
+- Console: https://console.firebase.google.com/u/0/?pli=1
