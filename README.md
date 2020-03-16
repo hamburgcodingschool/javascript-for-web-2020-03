@@ -80,16 +80,21 @@ URLs
 <img src="board-images/URL.jpg" width="600"/>
 
 ## Session 4
+
+REST APIs:
+- https://www.programmableweb.com/api-university/what-are-apis-and-how-do-they-work
+- https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/
   
 Cat Fact API:
 - https://catfact.ninja/
 - `https://catfact.ninja/fact`
+
+Punk API (beers):
+- https://punkapi.com/documentation/v2
+- `https://api.punkapi.com/v2/beers`
   
 Open Weather API:
 - https://openweathermap.org/current
 - `api.openweathermap.org/data/2.5/weather?q=Hamburg&appid=...`
-
-REST APIs:
-- https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/
 
 
