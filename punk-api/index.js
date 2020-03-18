@@ -1,4 +1,3 @@
-const content = document.getElementById("content");
 const title = document.getElementById("title");
 const slogan = document.getElementById("slogan");
 
