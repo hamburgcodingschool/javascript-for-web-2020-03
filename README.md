@@ -92,11 +92,16 @@ Cat Fact API:
 Punk API (beers):
 - https://punkapi.com/documentation/v2
 - `https://api.punkapi.com/v2/beers`
-  
+
+## Session 5
+
 Open Weather API:
 - https://openweathermap.org/current
 - `api.openweathermap.org/data/2.5/weather?q=Hamburg&appid=...`
 
 Firebase:
-- https://firebase.google.com/docs/firestore/quickstart
 - Console: https://console.firebase.google.com/u/0/?pli=1
+- Add Firebase to web project: https://firebase.google.com/docs/web/setup
+- Firestore Quickstart: https://firebase.google.com/docs/firestore/quickstart
+- Read data: https://firebase.google.com/docs/firestore/quickstart#read_data
+- Add data: https://firebase.google.com/docs/firestore/quickstart#add_data
