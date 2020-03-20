@@ -1,37 +1,34 @@
-const posts = [
-  {
-    title: "In The Mountains",
-    image: {
-      src: "img/card-top.jpg",
-      alt: "Sunset in the mountains"
-    },
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
-    author: "Teresa Holfeld",
-    author_image: "img/teresa-holfeld.jpg",
-    date: "Jan 18, 2020",
-    location: {
-      city: "Grenoble",
-      country: "France"
-    }
-  },
-  {
-    title: "The Crowded City",
-    image: {
-      src: "img/barcelona.jpeg",
-      alt: "Barcelona"
-    },
-    text:
-      "Barcelona is a very busy city. It is full of tourists, attractions and centuries old buildings. Very beautiful, really.",
-    author: "Teresa Holfeld",
-    author_image: "img/teresa-holfeld.jpg",
-    date: "Feb 28, 2020",
-    location: {
-      city: "Barcelona",
-      country: "Spain"
-    }
-  }
-];
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "...",
+  authDomain: "...",
+  databaseURL: "...",
+  projectId: "...",
+  storageBucket: "...",
+  messagingSenderId: "...",
+  appId: "..."
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+const db = firebase.firestore();
+
+const content = document.getElementById("content");
+
+db.collection("posts").get()
+  .then((posts) => {
+    posts.forEach((post) => {
+      const json = post.data();
+      // json
+      const html = createPostHtml(json);
+      const div = document.createElement("div");
+      div.innerHTML = html;
+      const weatherElement = div.querySelector("#weather");
+      const cityName = json.location.city;
+      fetchWeather(weatherElement, cityName);
+      content.append(div.firstChild);
+  });
+});
 
 const createPostHtml = (post) =>
   `<div class="container mx-auto max-w-sm rounded overflow-hidden shadow-lg justify-center bg-white m-6">
@@ -53,26 +50,14 @@ const createPostHtml = (post) =>
     <div class="px-6 py-4">Current weather: <span id="weather"></span></div>
   </div>`;
 
-const content = document.getElementById("content");
-
 const fetchWeather = (element, city) => {
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5aa80dd64429a526f1f80921fc784bb7`)
     .then(res => res.json())
     .then(json => {
-      const weather = json.weather[0].main; // Rain
-      // console.log("Wetter", weather);
-      element.innerHTML = weather; // Rain
+      const weather = json.weather[0].main;
+      element.innerHTML = weather;
     })
     .catch(error => {
       console.error(error);
     })
-}
-
-for (let i = 0; i < posts.length; i++) {
-  const div = document.createElement("div");
-  div.innerHTML = createPostHtml(posts[i]);
-  const weatherElement = div.querySelector("#weather");
-  const cityName = posts[i].location.city;
-  fetchWeather(weatherElement, cityName);
-  content.append(div.firstChild);
 }
