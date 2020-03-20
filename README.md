@@ -99,6 +99,17 @@ Open Weather API:
 - https://openweathermap.org/current
 - `api.openweathermap.org/data/2.5/weather?q=Hamburg&appid=...`
 
+## Session 6
+
+Discogs API:
+- https://www.discogs.com/
+- https://www.discogs.com/developers
+
+CORS:
+- https://javascript.info/fetch-crossorigin
+- https://javascript.info/fetch-api
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+
 Firebase:
 - Console: https://console.firebase.google.com/u/0/?pli=1
 - Add Firebase to web project: https://firebase.google.com/docs/web/setup
