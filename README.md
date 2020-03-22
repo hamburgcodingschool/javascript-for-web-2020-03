@@ -125,3 +125,4 @@ Date and Time:
 - `now.toDateString()`
 - https://codehandbook.org/javascript-date-format/
 - https://javascript.info/date
+- https://firebase.google.com/docs/reference/js/firebase.firestore.Timestamp/
