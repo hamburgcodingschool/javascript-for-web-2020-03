@@ -116,3 +116,12 @@ Firebase:
 - Firestore Quickstart: https://firebase.google.com/docs/firestore/quickstart
 - Read data: https://firebase.google.com/docs/firestore/quickstart#read_data
 - Add data: https://firebase.google.com/docs/firestore/quickstart#add_data
+
+## Session 7
+
+Date and Time:
+- `let now = new Date();`
+- `now.toString()`
+- `now.toDateString()`
+- https://codehandbook.org/javascript-date-format/
+- https://javascript.info/date
