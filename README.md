@@ -126,3 +126,6 @@ Date and Time:
 - https://codehandbook.org/javascript-date-format/
 - https://javascript.info/date
 - https://firebase.google.com/docs/reference/js/firebase.firestore.Timestamp/
+
+Firebase Storage:
+- https://firebase.google.com/docs/storage/web/start
