@@ -127,5 +127,16 @@ Date and Time:
 - https://javascript.info/date
 - https://firebase.google.com/docs/reference/js/firebase.firestore.Timestamp/
 
+Google Maps API:
+- https://cloud.google.com/maps-platform/
+- Google Cloud Console: https://console.cloud.google.com/
+- Maps JavaScript API Documentation: https://developers.google.com/maps/documentation/javascript/tutorial?hl=en_US
+
+`async` & `defer`:
+- https://javascript.info/script-async-defer
+
+Geolocations:
+- https://www.latlong.net/
+
 Firebase Storage:
 - https://firebase.google.com/docs/storage/web/start
