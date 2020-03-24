@@ -137,6 +137,7 @@ Google Maps API:
 
 Geolocations:
 - https://www.latlong.net/
+<img src="board-images/latitude-longitude.png" width="600"/>
 
 Firebase Storage:
 - https://firebase.google.com/docs/storage/web/start
