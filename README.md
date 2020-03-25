@@ -141,3 +141,17 @@ Geolocations:
 
 Firebase Storage:
 - https://firebase.google.com/docs/storage/web/start
+
+## Session 8
+
+Authentication:
+- Firebase auth: https://firebase.google.com/docs/auth/web/auth-state-persistence?authuser=0
+- What is JWT? https://www.youtube.com/watch?v=soGRyl9ztjI
+
+Routing:
+- `window.location.href`
+- simulates a link click
+
+Browser Location API:
+- `navigator.geolocation`
+- https://developers.google.com/maps/documentation/javascript/geolocation?hl=en_US
